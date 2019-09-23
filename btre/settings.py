@@ -118,4 +118,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+# when you run collectstatic it takes all the static
+# folders contents from apps and puts in root static fodler
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    # location of static folder created in btre folder
+    os.path.join(BASE_DIR, 'btre/static')
+]

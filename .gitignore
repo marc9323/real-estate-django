@@ -8,9 +8,11 @@
 __pycache__/
 local_settings.py
 db.sqlite3
-media
+# only the root static media to not be pushed to repo
+/media
 venv
 /venv
 /.vscode
+/static
 
 # only top level /static folder is ignored
